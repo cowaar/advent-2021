@@ -23,8 +23,6 @@ defmodule Day1 do
 
   def loop(list, acc) do
     new_acc = acc_if_higher(list, acc)
-    IO.inspect(list)
-    IO.inspect(acc)
     loop(tl(list), new_acc)
   end
 
